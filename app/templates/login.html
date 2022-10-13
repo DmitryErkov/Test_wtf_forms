@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<form method="post">
+    <div class="container">
+        <h3>Create your account</h3>
+        <hr>
+        <div class="form-group">
+            <label class="control-label">Email</label>
+            <input class="form-control" type="email" name="email" placeholder="example@mail.dom" required><br>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Password</label>
+            <input class="form-control" type="password" name="psw" placeholder="your password" required><br>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="remember" value="false"><br>
+            <label>Remember</label>
+        </div>
+        <div class="form-group">
+            <label class="control-label">
+                <input class="form-control" type="submit" name="submit"></label><br>
+        </div>
+    </div>
+    <hr>
+    </div>
+</form>
+{% endblock app_content%}
